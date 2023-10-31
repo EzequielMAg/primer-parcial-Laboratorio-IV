@@ -1,0 +1,27 @@
+<h2 mat-dialog-title class="custom-dialog-title">Editar Persona</h2>
+
+<div mat-dialog-content>
+
+  <form (ngSubmit)="editProduct()" class="custom-form">
+
+    <div class="form-field">
+      <label for="description">Descripción:</label>
+      <input type="text" id="description" name="description" [value]="product.description" [(ngModel)]="product.description" required>
+    </div>
+
+    <div class="form-field">
+      <label for="price">Precio:</label>
+      <input  type="text" id="price" name="price" [value]="product.price" [(ngModel)]="product.price" required>
+    </div>
+
+    <div class="form-field">
+      <label for="stock">Stock:</label>
+      <input type="text" id="stock" name="stock" [value]="product.stock" [(ngModel)]="product.stock" required>
+    </div>
+
+    <button type="submit" class="custom-button">Guardar Cambios</button>
+  </form>
+  <div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()" class="custom-button" >Cancelar</button>
+  </div>
+</div>

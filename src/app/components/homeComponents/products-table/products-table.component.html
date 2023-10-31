@@ -1,0 +1,40 @@
+<div>
+  <h2>PRODUCTOS</h2>
+  <table class="my-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+        <th>stock</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of inputProducts">
+        <td>{{ product.id }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.stock }}</td>
+
+        <td>
+          <button
+            class="edit-button btn btn-warning mx-2 btn-color small-icon"
+            (click)="editProduct(product)">
+            <i class="fa-regular fa-pen-to-square "></i>
+          </button>
+        </td>
+
+        <td>
+          <button
+            class="delete-button btn btn-danger mx-2 small-icon vertical-center"
+            (click)="deleteProduct(product.id!)">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

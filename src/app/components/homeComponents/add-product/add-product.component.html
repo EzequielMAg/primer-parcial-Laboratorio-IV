@@ -1,0 +1,24 @@
+<div>
+  <h2 class="dialog-title">Agregar un producto</h2>
+  <form autocomplete="off" class="login-form" (ngSubmit)="createProduct()">
+
+    <div class="form-field">
+      <label for="description">Descripcion:</label>
+      <input type="text" id="description" name="description" [(ngModel)]="newProduct.description" required>
+    </div>
+
+    <div class="form-field">
+      <label for="price">Precio:</label>
+      <input type="text" id="price" name="price" [(ngModel)]="newProduct.price" required>
+    </div>
+
+    <div class="form-field">
+      <label for="stock">Stock:</label>
+      <input type="text" id="stock" name="stock" [(ngModel)]="newProduct.stock" required>
+    </div>
+
+    <button type="submit" class="login-button">Crear producto</button>
+  </form>
+</div>
+
+<pre> {{newProduct | json}} </pre>

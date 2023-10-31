@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "id": 7,
+      "description": "Wireless Earbuds",
+      "price": "149.99",
+      "stock": "400"
+    },
+    {
+      "id": 8,
+      "description": "Portable Speaker",
+      "price": "79.99",
+      "stock": "350"
+    },
+    {
+      "id": 9,
+      "description": "Camera",
+      "price": "299.99",
+      "stock": "125"
+    },
+    {
+      "id": 10,
+      "description": "External Hard Drive",
+      "price": "129.99",
+      "stock": "275"
+    },
+    {
+      "id": 11,
+      "description": "aa",
+      "price": "a",
+      "stock": "a"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "ezequiel@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "email": "dev@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

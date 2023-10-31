@@ -1,0 +1,19 @@
+<div class="productos row fix-width">
+
+  <div class="col-8">
+    <div class="reduce centralize">
+      <app-products-table
+        [inputProducts]="products"
+        (productToDelete)="deleteProduct($event)"
+        (productToEdit)="editProduct($event)"
+      ></app-products-table>
+    </div>
+  </div>
+
+  <div class="col-4 ">
+    <div class="reduce">
+      <app-add-product (productToCreate)="createProduct($event)"></app-add-product>
+    </div>
+  </div>
+
+</div>
