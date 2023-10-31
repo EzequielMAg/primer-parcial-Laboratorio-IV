@@ -1,4 +1,5 @@
 # PrimerParcial
+La aplicación trata de un gestor de productos tecnológicos pertenecientes a una tienda. Solo se puede loguear, crear, eliminar, editar y obtener productos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
